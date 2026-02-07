@@ -1,23 +1,23 @@
 # Personal CV Website
 
-[cite_start]A responsive CV website developed for a web programming assignment, showcasing academic and technical information[cite: 62].
+A responsive CV website developed for a web programming assignment, showcasing academic and technical information.
 
-## 🚀 Live Demo
+##  Live Website
 **Website URL:** [https://cv-repo-abdullah.vercel.app/](https://cv-repo-abdullah.vercel.app/)
 
-## 👤 Student Information
-- [cite_start]**Name:** Abdullah Yaqoob [cite: 55]
-- [cite_start]**Roll Number:** 23L-0730 
-- [cite_start]**Section:** 6A 
+## Student Information
+- **Name:** Abdullah Yaqoob
+- **Roll Number:** 23L-0730 
+- **Section:** 6A 
 
-## 🛠️ Technologies
+##  Technologies
 - **HTML5:** Semantic structure.
 - **CSS3:** Flexbox-based responsive layout.
-- [cite_start]**JavaScript:** Theme toggle (Light/Dark mode)[cite: 65].
+- **JavaScript:** Theme toggle (Light/Dark mode).
 - **Deployment:** Vercel.
 
-## 📂 Features
-- [cite_start]**Project Portfolio:** Includes Vehicle Rental System, Solitaire Game, and Social Network App[cite: 89, 95, 98].
-- [cite_start]**Interactive Theme:** Switch between Light and Dark modes[cite: 65].
+##  Features
+- **Project Portfolio:** Includes Vehicle Rental System, Solitaire Game, and Social Network App.
+- **Interactive Theme:** Switch between Light and Dark modes.
 - **Responsive:** Optimized for mobile and desktop devices.
-- [cite_start]**Downloadable CV:** PDF resume integration[cite: 66].
+- **Downloadable CV:** PDF resume integration.
