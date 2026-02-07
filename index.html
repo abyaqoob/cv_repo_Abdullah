@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah Yaqoob - CV Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-actions">
+        <button id="toggletheme" class="btn btn-ghost" aria-label="Toggle Theme">
+            <span id="theme-icon">☀️</span> <span class="spacer">Theme</span>
+        </button>
+        <a class="btn btn-primary" href="AbdullahYaqoob-CV.pdf" download="AbdullahYaqoob-CV">
+            Download CV
+        </a>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header-content">
+        <div class="header-center-side">
+          <h1 class="header-title">Abdullah Yaqoob</h1>
+          <p class="title">BS Computer Science Student at FAST-NUCES</p>
+
+          <div class="header-contacts-grid">
+            <div class="contact-item">
+              <span class="icon-box">✉</span>
+              <a href="mailto:abdullahyaqoob051@gmail.com">abdullahyaqoob051@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="icon-box">☎</span>
+              <a href="tel:+923094257275">0309-4257275</a>
+            </div>
+            <div class="contact-item">
+              <span class="icon-box">📍</span>
+              <span>Lahore, Pakistan</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon-box">in</span>
+              <a href="https://www.linkedin.com/in/abdullah-yaqoob-5aa96124a/" target="_blank">LinkedIn Profile</a>
+            </div>
+          </div>
+
+          <nav class="header-nav">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="header-right-side">
+          <img src="images/pic.jpg" alt="Abdullah Yaqoob" class="header-profile-pic" />
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="container-main">
+      <section id="about" class="card reveal">
+        <h2 class="section-title">About Me</h2>
+        <p>Motivated and detail-oriented BS Computer Science student at FAST-NUCES. I have a strong foundation in programming and software development. Seeking an internship to apply my skills in Java, C++, and Web Development to real-world challenges.</p>
+      </section>
+
+      <section id="education" class="card reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-content">
+              <div class="row">
+                <h3>BS Computer Science — FAST-NUCES, Lahore</h3>
+                <span class="muted">2023 – 2027</span>
+              </div>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-content">
+              <div class="row">
+                <h3>Intermediate (FSc Pre-Engineering) — Kips College</h3>
+                <span class="muted">2020 – 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="card reveal">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>Programming</h3>
+            <ul>
+              <li>C++</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3>Web & Tools</h3>
+            <ul>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3>Databases</h3>
+            <ul>
+              <li>SQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="card reveal">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-item card">
+            <h3>Vehicle Rental Management System</h3>
+            <p class="muted">A web platform to rent cars and view bookings using HTML, CSS, JS, and SQL.</p>
+          </article>
+          <article class="project-item card">
+            <h3>Solitaire Game</h3>
+            <p class="muted">Built using Linked Lists and Iterators in C++ for efficient data handling.</p>
+          </article>
+          <article class="project-item card">
+            <h3>Social Network App</h3>
+            <p class="muted">Console-based social media application utilizing pure OOP concepts and file handling.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card reveal">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="return false;">
+              <div class="form-group">
+                <input type="text" placeholder="Full Name" required />
+                <input type="email" placeholder="Email Address" required />
+              </div>
+              <textarea rows="5" placeholder="Your Message..." required></textarea>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container-main footer-inner">
+        <p>© <span id="year"></span> Abdullah Yaqoob. All rights reserved.</p>
+        <p class="muted">Roll No: 23L-0730 | Section: 6A</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      
+      const root = document.documentElement;
+      const toggle = document.getElementById("toggletheme");
+      const themeIcon = document.getElementById("theme-icon");
+
+      toggle.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme");
+        if (current === "dark") {
+            root.setAttribute("data-theme", "light");
+            themeIcon.textContent = "☀️";
+        } else {
+            root.setAttribute("data-theme", "dark");
+            themeIcon.textContent = "🌙";
+        }
+      });
+
+      const items = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("in"); });
+      }, { threshold: 0.1 });
+      items.forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
